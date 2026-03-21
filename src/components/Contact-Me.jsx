@@ -2,6 +2,7 @@ import { Mail, ArrowUpRight } from 'lucide-react';
 import XIcon from '@mui/icons-material/X';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { motion } from 'framer-motion';
+import { PiTiktokLogoThin } from "react-icons/pi";
 
 
 function ContactMe() {
@@ -9,6 +10,7 @@ function ContactMe() {
         email: 'yakubabiona847@gmail.com',
         twitter: '@yaKUBedits',
         instagram: '@yakubeditss',
+        tiktok: '@yakubedits',
         profileImage: 'https://images.unsplash.com/photo-1576558656222-ba66febe3dec?w=200',
     };
 
@@ -28,11 +30,11 @@ function ContactMe() {
             color: 'hover:text-[#E4405F]',
         },
         {
-            name: 'Email',
-            handle: contactInfo.email,
-            url: `mailto:${contactInfo.email}`,
-            icon: Mail,
-            color: 'hover:text-primary',
+            name: 'tiktok',
+            handle: contactInfo.tiktok,
+            url: `https://tiktok.com/${contactInfo.tiktok}`,
+            icon: PiTiktokLogoThin,
+            color: 'hover:text-[#FF0050]',
         },
     ];
 
