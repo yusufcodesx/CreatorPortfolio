@@ -1,5 +1,6 @@
 import { Play, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
 function Hero() {
 
@@ -10,11 +11,18 @@ function Hero() {
     }
   };
 
-  const isMobile = window.innerWidth < 640; // Tailwind's sm breakpoint
+  // Fix: use state + useEffect instead of window.innerWidth directly
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 640);
+    check(); // run on mount
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, [])
 
 
   return (
-    <section id='hero' className="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <section id='hero' className="min-h-dvh flex flex-col justify-center items-center text-center px-6">
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">

@@ -32,8 +32,8 @@ function Footer() {
                         © {currentYear} YaKUBeditss. All rights reserved.
                     </p>
 
-                    <p className="text-muted-foreground">
-                        Built by Oba.js (@heshouldbeyusuf)
+                    <p className="text-muted-foreground hover:text-primary transition-colors">
+                        <a href="http://x.com/yusufcodesx">Built by Yxsuf (@yusufcodesx)</a> 
                     </p>
 
                     <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
