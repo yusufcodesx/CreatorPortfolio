@@ -16,14 +16,15 @@ function Navbar() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const scrollToSection = (id) => {  // ✅ Accept id parameter
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-            setIsMobileMenuOpen(false);
-        }
+    const scrollToSection = (id) => {
+        setIsMobileMenuOpen(false);
+        setTimeout(() => {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 100); // adjust delay to match your menu's close transition if it has one
     };
-
     const navLinks = [
         { id: 'hero', label: 'Home' },
         { id: 'motion-design', label: 'Motion Design' },
@@ -67,7 +68,7 @@ function Navbar() {
                             <motion.button
                                 key={link.id}
                                 onClick={() => scrollToSection(link.id)}
-                                className="px-5 py-2 text-sm text-muted-foreground hover:text-primary transition-colors relative group hover:bg-primary/10 rounded-xl"
+                                className="px-5 py-2 text-sm text-muted-foreground hover:text-primary transition-colors relative group "
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
