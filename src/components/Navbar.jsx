@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { BadgeCheck, Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { AnimatePresence } from 'framer-motion';
 
@@ -57,8 +57,8 @@ function Navbar() {
                                 />
                             </a>
                         </div>
-                        <span className="hidden sm:block font-semibold text-primary tracking-wider">
-                            Motion Designer
+                        <span className="hidden sm:flex  font-semibold text-primary tracking-wider">
+                            Yakub Edits <span className='p-0.5'> <BadgeCheck /></span>
                         </span>
                     </motion.div>
 

@@ -6,6 +6,10 @@ const motionVideos = [
   {
     id: 2,
     url: "https://www.youtube.com/embed/wH5hVumVzGM?si=WkYoU5ARwGHIo45F",
+  },
+  {
+    id: 3,
+    url: "https://www.youtube.com/embed/_OMF7P0zMp8?si=liPuzr2CzzBdTdBZ"
   }
 ];
 

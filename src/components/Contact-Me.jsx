@@ -1,5 +1,6 @@
 import { Mail, ArrowUpRight } from 'lucide-react';
 import XIcon from '@mui/icons-material/X';
+import { FiYoutube } from "react-icons/fi";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { motion } from 'framer-motion';
 import { PiTiktokLogoThin } from "react-icons/pi";
@@ -9,8 +10,9 @@ function ContactMe() {
     const contactInfo = {
         email: 'yakubabiona847@gmail.com',
         twitter: '@yaKUBedits',
-        instagram: '@yakubeditss',
+        instagram: '@yakubcreates',
         tiktok: '@yakubedits',
+        youtube: '@yaKUBeditss',
         profileImage: 'https://images.unsplash.com/photo-1576558656222-ba66febe3dec?w=200',
     };
 
@@ -30,11 +32,18 @@ function ContactMe() {
             color: 'hover:text-[#E4405F]',
         },
         {
-            name: 'tiktok',
+            name: 'Tiktok',
             handle: contactInfo.tiktok,
             url: `https://tiktok.com/${contactInfo.tiktok}`,
             icon: PiTiktokLogoThin,
             color: 'hover:text-[#FF0050]',
+        },
+        {
+            name: 'Youtube',
+            handle: contactInfo.youtube,
+            url: `https://youtube.com/${contactInfo.youtube}`,
+            icon: FiYoutube,
+            color: 'hover:text-[#E4405F]',
         },
     ];
 
@@ -143,7 +152,7 @@ function ContactMe() {
                 </motion.div>
 
                 {/* Social Links */}
-                <div className="grid md:grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-2 gap-6">
                     {socialLinks.map((social, index) => (
                         <motion.a
                             className="group bg-card/50 backdrop-blur-sm border border-border p-6 rounded-2xl  hover:border-primary/50 transition-all sm:p-4"
