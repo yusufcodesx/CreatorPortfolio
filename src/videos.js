@@ -45,10 +45,6 @@ const shortVideos = [
     id: 4,
     url: "https://youtube.com/embed/pIhbepRKRpg?si=ivvUxdDals-NNulW",
   },
-  {
-    id: 5,
-    url: "https://youtube.com/embed/Kl5O1txk4zo?si=cnqgtURs7Nzrz9PG",
-  }
 ];
 
 export { motionVideos, longVideos, shortVideos };
