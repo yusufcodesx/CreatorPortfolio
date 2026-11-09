@@ -1,16 +1,20 @@
 const motionVideos = [
-  {
+{
     id: 1,
-    url: "https://www.youtube.com/embed/_OMF7P0zMp8?si=liPuzr2CzzBdTdBZ"
+    url: "https://www.youtube.com/embed/IVmtJW3GZV4"
   },
   {
     id: 2,
-    url: "https://www.youtube.com/embed/DOV9YxWqnic?si=ZCdk_arKwhx95_sL",
+    url: "https://www.youtube.com/embed/_OMF7P0zMp8?si=liPuzr2CzzBdTdBZ",
   },
   {
     id: 3,
-    url: "https://www.youtube.com/embed/wH5hVumVzGM?si=WkYoU5ARwGHIo45F",
+    url: "https://youtube.com/embed/5Jw7454rBFs",
   },
+  {
+    id: 4,
+    url: "https://www.youtube.com/embed/DOV9YxWqnic?si=ZCdk_arKwhx95_sL"
+  }
 ];
 
 const longVideos = [
